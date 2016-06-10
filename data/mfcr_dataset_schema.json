@@ -1,0 +1,242 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://project-open-data.github.io/schema/1_0_final/single_entry.json#",
+  "title": "MFCR Dataset Schema",
+  "description": "Metadata schéma pro katalogy otevřených dat ČR.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "title": "UUID",
+      "type": "string"
+    },
+    "name": {
+      "title": "Název",
+      "type": "string"
+    },
+    "title": {
+      "title": "Titulek",
+      "type": "string"
+    },
+    "publisher_name": {
+      "title": "Poskytovatel dat",
+      "type": "string"
+    },
+    "publisher_uri": {
+      "title": "Poskytovatel dat URL",
+      "type": "string"
+    },
+    "maintainer": {
+      "title": "Správce",
+      "type": "string"
+    },
+    "maintainer_email": {
+      "title": "Správce Email",
+      "type": "string"
+    },
+    "ruian_code": {
+      "title": "RUIAN kód",
+      "type": "string"
+    },
+    "ruian_type": {
+      "title": "RUIAN typ",
+      "type": "string"
+    },
+    "temporal_start": {
+      "title": "Časová platnost od",
+      "type": "string"
+    },
+    "temporal_end": {
+      "title": "Časová platnost do",
+      "type": "string"
+    },
+    "frequency": {
+      "title": "Periodicita publikace - kód",
+      "type": "string"
+    },
+    "license_title": {
+      "title": "Licence - popis",
+      "description": "",
+      "type": "string"
+    },
+    "license_link": {
+      "title": "Licence - URL",
+      "description": "",
+      "type": "string"
+    },
+    "notes": {
+      "title": "Popis",
+      "description": "",
+      "type": "string"
+    },
+    "url": {
+      "title": "URL",
+      "type": "string"
+    },
+    "state": {
+      "title": "Stav",
+      "type": "string",
+      "enum": ["uncomplete", "complete", "active"]
+    },
+    "log_message": {
+      "title": "Log Message",
+      "type": "string"
+    },
+    "private": {
+      "title": "Private",
+      "type": "boolean"
+    },
+    "metadata_created": {
+      "title": "Vytvořeno",
+      "type": "string"
+    },
+    "metadata_modified": {
+      "title": "Poslední aktualizace",
+      "type": "string"
+    },
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "default": "Dataset"
+    },
+    "resources": {
+      "title":"Resources",
+      "description":"",
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "UUID",
+                "type": "string"
+              },
+              "url": {
+                "title": "URL",
+                "type": "string"
+              },
+              "description": {
+                "title": "Popis",
+                "type": "string"
+              },
+              "format": {
+                "title": "Formát",
+                "type": "string"
+              },
+              "mimetype": {
+                "title": "MIME typ",
+                "type": "string"
+              },
+              "state": {
+                "title": "state",
+                "type": "string"
+              },
+              "name": {
+                "title": "Název",
+                "type": "string"
+              },
+              "size": {
+                "title": "Velikost",
+                "type": "string"
+              },
+              "created": {
+                "title": "Vytvořeno",
+                "type": "string"
+              },
+              "last_modified": {
+                "title": "Poslední úprava",
+                "type": "string"
+              },
+              "ruian_code": {
+                "title": "RUIAN kód",
+                "type": "string"
+              },
+              "ruian_type": {
+                "title": "RUIAN typ",
+                "type": "string"
+              },
+              "temporal_start": {
+                "title": "Časová platnost od",
+                "type": "string"
+              },
+              "temporal_end": {
+                "title": "Časová platnost do",
+                "type": "string"
+              }
+            }
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        {
+            "type": "null"
+        }
+      ]
+    },
+    "tags": {
+      "title":"Tagy",
+      "description":"",
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "UUID",
+                "type": "string"
+              },
+              "vocabulary_id": {
+                "title": "Vocaulary ID",
+                "type": "string"
+              },
+              "name": {
+                "title": "Name",
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "groups": {
+      "title":"Skupiny",
+      "description":"",
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "display_name": {
+                "title": "Zobrazit jako",
+                "type": "string"
+              },
+              "description": {
+                "title": "Popis",
+                "type": "string"
+              },
+              "id": {
+                "title": "UUID",
+                "type": "string"
+              },
+              "image_display_url": {
+                "title": "URL obrázku",
+                "type": "string"
+              },
+              "title": {
+                "title": "Titulek",
+                "description": "",
+                "type": "string"
+              },
+              "name": {
+                "title": "Název",
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
