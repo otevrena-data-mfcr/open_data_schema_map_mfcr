@@ -4,89 +4,65 @@
   "title": "CKAN Resource Schema",
   "description": "The metadata format for all federal open data. Validates a single JSON object entry (as opposed to entire Data.json catalog).",
   "type": "object",
-  "properties":  {
+  "properties": {
     "id": {
-      "title": "UUID",
+      "title": "ID",
       "type": "string"
     },
-    "revision_id": {
-      "title": "Revision ID",
+    "license_autorske_dilo": {
+      "title": "Specifikace podmínek užití - Autorské dílo",
       "type": "string"
     },
-    "url": {
-      "title": "URL",
+    "license_originalni_databaze": {
+      "title": "Specifikace podmínek užití - Originální databáze",
       "type": "string"
     },
-    "description": {
-      "title": "Description",
+    "license_zvlastni_prava_databaze": {
+      "title": "Specifikace podmínek užití - Ochrana zvláštními právy pořizovatele databáze",
+      "type": "string"
+    },
+    "license_osobni_udaje": {
+      "title": "Specifikace podmínek užití - Osobní údaje",
+      "type": "string"
+    },
+    "downloadURL": {
+      "title": "Odkaz na stažení souboru",
+      "type": "string"
+    },
+    "accessURL": {
+      "title": "Přístupové URL",
       "type": "string"
     },
     "format": {
-      "title": "Format",
-      "type": "string"
-    },
-    "hash": {
-      "title": "hash",
-      "type": "string"
-    },
-    "state": {
-      "title": "state",
-      "type": "string"
-    },
-    "Position": {
-      "title": "position",
-      "type": "string"
-    },
-    "revision_timestamp": {
-      "title": "Revision Timestamp",
-      "type": "string"
-    },
-    "name": {
-      "title": "Name",
-      "type": "string"
-    },
-    "resource_type": {
-      "title": "Resource Type",
-      "type": "string"
-    },
-    "url_type": {
-      "title": "URL Type",
+      "title": "Formát souboru ke stažení",
       "type": "string"
     },
     "mimetype": {
-      "title": "MIME Type",
+      "title": "Media type souboru ke stažení",
       "type": "string"
     },
-    "webstore_url": {
-      "title": "Web Store URL",
+    "conformsTo": {
+      "title": "Odkaz na strojově čitelné schéma souboru ke stažení",
       "type": "string"
     },
-    "size": {
-      "title": "Size",
+    "compressFormat": {
+      "title": "Media type kompresního formátu",
       "type": "string"
     },
-    "created": {
-      "title": "Created",
+    "packageFormat": {
+      "title": "Media type balíčkovacího formátu",
       "type": "string"
     },
-    "resource_group_id": {
-      "title": "Resource Group UUID",
+    "name": {
+      "title": "Název distribuce datové sady",
       "type": "string"
     },
-    "cache_last_updated": {
-      "title": "Cache Last Updated",
+    "service_endpointURL": {
+      "title": "Datová služba - Přístupový bod",
       "type": "string"
     },
-    "webstore_last_updated": {
-      "title": "Web Store Last Updated",
-      "type": "string"
-    },
-    "datastore_active": {
-      "title": "Datastore Active",
-      "type": "string"
-    },
-    "last_modified": {
-      "title": "Last Modified",
+    "service_endpointDescription": {
+      "title": "Datová služba - Popis přístupového bodu",
       "type": "string"
     }
   }
