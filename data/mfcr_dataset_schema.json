@@ -21,6 +21,10 @@
       "title": "Popis",
       "type": "string"
     },
+    "publisher": {
+      "title": "Poskytovatel",
+      "type": "string"
+    },
     "theme": {
       "title": "Téma",
       "description": "",
