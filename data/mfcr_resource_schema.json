@@ -9,6 +9,10 @@
       "title": "ID",
       "type": "string"
     },
+    "title": {
+      "title": "Název distribuce datové sady",
+      "type": "string"
+    },
     "license_autorske_dilo": {
       "title": "Specifikace podmínek užití - Autorské dílo",
       "type": "string"
@@ -51,10 +55,6 @@
     },
     "packageFormat": {
       "title": "Media type balíčkovacího formátu",
-      "type": "string"
-    },
-    "name": {
-      "title": "Název distribuce datové sady",
       "type": "string"
     },
     "service_endpointURL": {
