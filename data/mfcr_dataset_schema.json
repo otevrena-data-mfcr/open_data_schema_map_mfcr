@@ -74,6 +74,10 @@
       "title": "Je součástí",
       "type": "string"
     },
+    "eurovoc": {
+      "title": "Klasifikace dle EuroVoc",
+      "type": "string"
+    },
     "distribution": {
       "title": "Distribuce datové sady",
       "description": "",
