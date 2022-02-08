@@ -77,7 +77,7 @@
     "isPartOf": {
       "title": "Je součástí",
       "type": "string"
-       },
+    },
     "distribution": {
       "title": "Distribuce datové sady",
       "description": "",
