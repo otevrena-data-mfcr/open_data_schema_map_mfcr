@@ -62,6 +62,10 @@
       "title": "Odkaz na specifikaci",
       "type": "string"
     },
+    "eurovoc": {
+      "title": "Klasifikace dle EuroVoc",
+      "type": "string"
+    },
     "spatialResolutionInMeters": {
       "title": "Prostorové rozlišení v metrech",
       "type": "string"
@@ -73,11 +77,7 @@
     "isPartOf": {
       "title": "Je součástí",
       "type": "string"
-    },
-    "eurovoc": {
-      "title": "Klasifikace dle EuroVoc",
-      "type": "string"
-    },
+       },
     "distribution": {
       "title": "Distribuce datové sady",
       "description": "",
