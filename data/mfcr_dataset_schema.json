@@ -62,7 +62,7 @@
       "title": "Odkaz na specifikaci",
       "type": "string"
     },
-    "eurovoc": {
+    "koncept_euroVoc": {
       "title": "Klasifikace dle EuroVoc",
       "type": "string"
     },
