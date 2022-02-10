@@ -57,10 +57,6 @@
       "title": "Media type balíčkovacího formátu",
       "type": "string"
      },
-    "sch_ma": {
-      "title": "Schéma",
-      "type": "string"
-    },
     "service_endpointURL": {
       "title": "Datová služba - Přístupový bod",
       "type": "string"
